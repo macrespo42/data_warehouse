@@ -11,6 +11,9 @@ services:
       - type: bind
         source: ./data_engineer
         target: /opt
+      - type: bind
+        source: ./ex01
+        target: /opt/ex01
   adminer:
     image: adminer
     restart: always
